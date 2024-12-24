@@ -1,0 +1,36 @@
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 90%;
+  height: fit-content;
+}
+
+.close-btn-container {
+  display: flex;
+  justify-content: end;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #c50e29;
+}
+
+.modal h2 {
+  margin-top: 1rem;
+  color: #333;
+  text-align: center;
+}

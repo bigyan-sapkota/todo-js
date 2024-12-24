@@ -1,0 +1,23 @@
+.modal #taskInput {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-block: 1.5rem;
+  font-size: 1rem;
+}
+
+.modal button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: ALL 0.3s;
+}
+
+#addTaskModal button:hover {
+  background-color: var(--primary-color);
+}
