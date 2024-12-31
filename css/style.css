@@ -30,6 +30,7 @@ body {
 }
 
 .add-task-btn {
+  margin: 0 auto;
   background-color: var(--primary-color);
   color: white;
   border: none;
@@ -65,6 +66,7 @@ body {
 
 .task-list li .delete-btn {
   background-color: var(--danger-color);
+  border: none;
   color: white;
   padding: 0.5rem;
   border-radius: 50%;
@@ -74,4 +76,20 @@ body {
 
 .task-list li .delete-btn:hover {
   background-color: #c50e29;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1.5rem 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 2rem 0;
+  }
+
+  .header h1 {
+    font-size: 3rem;
+  }
 }

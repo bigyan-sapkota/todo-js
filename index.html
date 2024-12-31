@@ -52,8 +52,28 @@
 
         <form id="addTaskForm">
           <input type="text" id="taskInput" placeholder="Enter you task" />
-          <button type="submit">Add</button>
+          <button type="submit" class="add-task-button">Add</button>
         </form>
+      </div>
+    </div>
+
+    <!-- delete task modal -->
+    <div class="modal" id="deleteTaskModal">
+      <div class="modal-content">
+        <div class="close-btn-container">
+          <i
+            class="fa-solid fa-delete-left close-btn"
+            id="closeDeleteModal"
+          ></i>
+        </div>
+
+        <h2 class="modal-title">Are you sure?</h2>
+
+        <p>Do you really want to delete this task?</p>
+        <div class="modal-actions">
+          <button id="confirmDelete">Yes</button>
+          <button id="cancelDelete">No</button>
+        </div>
       </div>
     </div>
 

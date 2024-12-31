@@ -1,5 +1,4 @@
-const createTaskElement = (task) => {
-  console.log(task);
+const createTaskElement = (task, handleDeleteTask) => {
   // <li></li>
   const liTag = document.createElement("li");
 
@@ -17,7 +16,7 @@ const createTaskElement = (task) => {
 
   //  <button class='delete-btn'><i class="fa-solid fa-trash delete-btn"></i></button>
   //  while clicking this button a task will be deleted with given id
-  deleteBtn.addEventListener("click", () => console.log("hello"));
+  deleteBtn.addEventListener("click", () => handleDeleteTask(task.id));
 
   //   <li>Read Java <button class='delete-btn'><i class="fa-solid fa-trash delete-btn"></i></button></li>;
   //   the button is added and when clicked on it handleDeleteTask will run
@@ -26,11 +25,11 @@ const createTaskElement = (task) => {
   return liTag;
 };
 
-export const renderTasks = (tasks, taskList) => {
+export const renderTasks = (tasks, taskList, handleDeleteTask) => {
   taskList.innerHTML = "";
 
   tasks.forEach((task) => {
-    const taskElement = createTaskElement(task);
+    const taskElement = createTaskElement(task, handleDeleteTask);
     taskList.appendChild(taskElement);
   });
 };

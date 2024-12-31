@@ -34,3 +34,41 @@
   color: #333;
   text-align: center;
 }
+
+.modal-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+#deleteTaskModal p {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.modal-actions button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.modal-actions #confirmDelete {
+  background-color: var(--danger-color);
+}
+.modal-actions #cancelDelete {
+  background-color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+  .modal-content {
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal-content {
+    max-width: 650px;
+  }
+}
